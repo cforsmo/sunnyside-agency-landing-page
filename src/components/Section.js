@@ -1,20 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Section({title, description, leftBtnText, rightBtnText, backgroundImg, image}) {
+function Section({title, description, leftBtnText, rightBtnText, backgroundImg, image, iconDown}) {
 
   return (
     <Wrap bgImage={`../images/${backgroundImg}`}>
       <ItemText>
         <h1>{title}</h1>
       </ItemText>
+      <DownArrow src="/images/icon-arrow-down.svg" />
       <Text>
         <p>{description}</p>
       </Text>
+     
       <Buttons>
         <ButtonGroup>
           <LeftButton>
-            {leftBtnText}
+            
           </LeftButton>
           { rightBtnText &&
             <RightButton>
@@ -22,6 +24,7 @@ function Section({title, description, leftBtnText, rightBtnText, backgroundImg, 
             </RightButton>
           }
         </ButtonGroup>
+       
       </Buttons>
     </Wrap>
   )
@@ -47,7 +50,8 @@ const ItemText = styled.div`
   padding-top: 15vh;
   text-align: center;
   color: white;
-  font-size: 20px;
+  font-size: 2.1em;
+  letter-spacing: .2em;
   font-family: Fraunces;
   text-transform: uppercase;
 `
@@ -89,15 +93,12 @@ const RightButton = styled(LeftButton)`
 `
 
 const DownArrow = styled.img`
-  height: 40px;
-  overflow-x: hidden;
-  animation: animateDown infinite 1.5s;
+  height: 100px;
+
 `
 
 const Buttons = styled.div`
 
 `
-
-
 
 

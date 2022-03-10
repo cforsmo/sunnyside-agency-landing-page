@@ -49,7 +49,6 @@ const NavList = styled.div`
   & > * { 
   font-family: Barlow;
   font-size: 1.3em;
-  font-weight: bold;
   list-style-type: none;
   padding: 20px;
 
@@ -57,7 +56,14 @@ const NavList = styled.div`
 `
 const ContactButton = styled.button`
   height: 50px;
-  width: 130px;
+  width: 150px;
   border-radius: 30px;
-  border: none;
+  border: 0;
+  text-align: center;
+  padding: 10px;
+  margin: 10px;
+  font-family: Fraunces;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  color: hsl(212, 27%, 19%);
 `
