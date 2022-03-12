@@ -16,7 +16,7 @@ function SectionEgg(props) {
         </Button>
       </Text>
       <Image>
-        <img src={`../images/${props.image}`}/>
+        <img src={`../images/${props.image}`} alt="Photograph of an egg"/>
       </Image>
      
     </Main>
@@ -28,6 +28,13 @@ export default SectionEgg
 const Main = styled.div`
   display: flex;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    
+  }
+  
 `
 
 const Text = styled.div`
@@ -35,14 +42,14 @@ const Text = styled.div`
   text-align: left;
 `
 
-const MainText = styled.h1` 
+const MainText = styled.div` 
   font-family: Fraunces;
   font-size: 1.2em;
   max-width: 400px;
   color: hsl(212, 27%, 19%);
 `
 
-const SmallText = styled.p`
+const SmallText = styled.div`
   font-family: Barlow;
   font-size: 1em;
   max-width: 350px;
@@ -58,6 +65,10 @@ const Image = styled.div`
 const Button = styled.div`
   font-family: Fraunces;
   text-transform: uppercase;
+  border-bottom: 6px solid hsl(51, 100%, 49%);
+  display: inline-block;
+  line-height: 7px;
+  
 
 `
 /*- Very dark desaturated blue: hsl(212, 27%, 19%)

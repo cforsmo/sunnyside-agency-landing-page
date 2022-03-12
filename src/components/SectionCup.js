@@ -16,7 +16,7 @@ function SectionCup(props) {
         </Button>
       </Text>
       <Image>
-        <img src={`../images/${props.image}`}/>
+        <img src={`../images/${props.image}`} alt="Photograph of a cup"/>
       </Image>
      
     </Main>
@@ -29,6 +29,14 @@ const Main = styled.div`
   display: flex;
   flex-direction: row-reverse;
   justify-content: space-between;
+  
+  
+  @media (max-width: 768px) {
+    flex-direction: column-reverse;
+    align-items: center;
+    
+
+  }
 
 `
 
@@ -37,7 +45,7 @@ const Text = styled.div`
   text-align: left;
 `
 
-const MainText = styled.h1` 
+const MainText = styled.div` 
   font-family: Fraunces;
   font-size: 1.2em;
   max-width: 400px;
@@ -45,7 +53,7 @@ const MainText = styled.h1`
 
 `
 
-const SmallText = styled.p`
+const SmallText = styled.div`
   font-family: Barlow;
   font-size: 1em;
   max-width: 400px;
@@ -61,4 +69,7 @@ const Image = styled.div`
 const Button = styled.div`
   font-family: Fraunces;
   text-transform: uppercase;
+  border-bottom: 6px solid hsl(7, 99%, 70%);
+  display: inline-block;
+  line-height: 7px;
 `

@@ -1,18 +1,15 @@
 import React from 'react'
-import styled from 'styled-components'
-import Navbar from './Navbar'
+import MobileNavigation from './MobileNav'
+import Navbar from "./Navbar"
+import classes from "../Navbar.module.css"
+
 
 function Header() {
   return (
-    <div>
-      <Navbar 
-      text="sunnyside" 
-      about="About"
-      services="Services"
-      projects="Projects"
-      contact="Contact"
-      />
-
+    
+    <div className={classes.Header}>
+      <MobileNavigation />
+      <Navbar />
     </div>
   )
 }

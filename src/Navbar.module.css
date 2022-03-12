@@ -1,0 +1,71 @@
+.NavListItems {
+  color: white;
+  display: flex;
+  margin-top: 0;
+  justify-content: flex-end;
+  position: absolute;
+  
+}
+
+.NavListItems li {
+  font-family: Barlow;
+  font-size: 1em;
+  list-style-type: none;
+  padding: 20px;
+  display: inline-block;
+  margin: 1.5vw;
+}
+
+.Logo {
+  position: absolute;
+  font-family: Barlow;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: white;
+}
+.ContactButton {
+  height: 10px;
+  width: 100px;
+  border-radius: 50px;
+  border: 0;
+  text-align: center;
+  padding: 40px;
+  margin: 3px 30px 0 20px;
+  font-family: Fraunces;
+  text-transform: uppercase;
+  font-size: 1.1em;
+  color: hsl(212, 27%, 19%);
+  background-color: white;
+  padding-top: 0px;
+  
+}
+.Header .MobileNavigation {
+  display: none;
+
+  
+}
+
+@media (max-width: 769px) {
+  .Header .MobileNavigation{
+    display: flex;
+
+  }
+
+  .Header .Navigation{
+    display: none;
+  }
+
+  .Header .MobileNavigation .Hamburger {
+    position: absolute;
+    right: 3%;
+    cursor: pointer;
+    top: 10px;
+  }
+
+  .NavListItems {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+
+  }
+}
