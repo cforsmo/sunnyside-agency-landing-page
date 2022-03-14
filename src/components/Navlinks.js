@@ -5,8 +5,8 @@ import classes from "../Navbar.module.css"
 function NavLinks () {
   return(
     <div className={classes.NavLinks}>
+      <p className={classes.Logo}>sunnyside</p>
       <nav>
-        <p className={classes.Logo}>sunnyside</p>
         <ul className={classes.NavListItems}>
           <li>About</li>
           <li>Services</li>

@@ -17,11 +17,13 @@
 }
 
 .Logo {
+  display: flex;
   position: absolute;
   font-family: Barlow;
   font-size: 1.5em;
   font-weight: bold;
   color: white;
+  left: 19px;
 }
 .ContactButton {
   height: 10px;
@@ -41,14 +43,17 @@
 }
 .Header .MobileNavigation {
   display: none;
-
+  
   
 }
 
 @media (max-width: 769px) {
+
+
   .Header .MobileNavigation{
     display: flex;
-
+    justify-content: center;
+    
   }
 
   .Header .Navigation{
@@ -59,13 +64,41 @@
     position: absolute;
     right: 3%;
     cursor: pointer;
-    top: 10px;
+    top: 22px;
   }
 
   .NavListItems {
     display: flex;
     flex-direction: column;
     position: absolute;
+    justify-content: center;
+    background-color: white;
+    color: hsl(232, 10%, 55%);
+    top: 100px;
+    float: left;
+    width: 300px;
+    height: 300px;
+    right: 3%;
+    
+
+  }
+
+  .NavListItems li {
+    padding-bottom: 10px;
+    font-size: 20px;
+    text-align: center;
+    
+  }
+
+
+  
+  .NavListItems .ContactButton {
+    background-color: hsl(51, 100%, 49%);
+    font-family: Fraunces;
+    height: 25px;
+    width: 100px;
+    font-size: 15px;
+    margin-left: 25%;
 
   }
 }
