@@ -1,0 +1,115 @@
+
+.Egg {
+  width: 50vw;
+  height: auto;
+}
+
+.TextEgg {
+  width: 50vw;
+  height: auto;
+
+}
+
+
+.Cup {
+  width: 50vw;
+  height: auto;
+  
+}
+
+.TextCup {
+  width: 50vw;
+  height: 50vh;
+  text-align: left;
+}
+
+.Fruit {
+  display: flex;
+  flex-direction: row;
+  width: 100vw;
+}
+
+.Orange {
+  width: 50vw;
+  height: auto;
+  z-index: -1;
+  position: relative;
+  
+}
+
+.Cherry {
+  width: 50vw;
+  height: auto;
+  z-index: -1;
+  position: relative;
+
+  
+}
+
+
+.FigcaptionOrange {
+float: right;
+text-align: center;
+z-index: 1;
+margin-top: -11em;
+
+}
+.TitleOrange {
+  font-family: Fraunces;
+  font-size: 2em;
+  color: hsl(198, 62%, 26%);
+  
+
+}
+
+.ParagraphOrange {
+  font-family: Barlow;
+  font-size: 1.1em;
+  color: hsl(198, 62%, 26%);
+
+
+}
+
+.FigcaptionCherry {
+  float: left;
+  text-align: center;
+  z-index: 1;
+  margin-top: -11em;
+  
+  }
+  .TitleCherry {
+    font-family: Fraunces;
+    font-size: 2em;
+    color: hsl(167, 40%, 24%);
+  
+    
+  
+  }
+  
+  .ParagraphCherry {
+    font-family: Barlow;
+    font-size: 1.1em;
+    color: hsl(167, 40%, 24%);
+  
+  
+  
+  }
+
+  @media (max-width: 768px) {
+
+    .Fruit {
+      display: flex;
+      flex-direction: column-reverse;
+     
+    }
+
+    .Cherry {
+      width: 100vw;
+
+    }
+
+    .Orange {
+      width: 100vw;
+      
+    }
+  }

@@ -1,7 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 
-function Section({title, description, backgroundImg, image, iconDown}) {
+function Section({title, description, backgroundImg, backgroundImgMobile, image, iconDown}) {
 
   return (
     <Wrap bgImage={`../images/${backgroundImg}`}>
@@ -30,6 +30,15 @@ const Wrap = styled.div`
   justify-content: space-between;
   align-items: center;
   background-image: ${props => `url("/images/${props.bgImage}")`}
+`
+const MobileImage = styled.div`
+  /*display: none;
+
+  @media (max-width: 768px) {
+    display: flex;
+    background-image: url(../images/image-header-mobile.jpg);
+
+  }*/
 `
 
 const ItemText = styled.div`

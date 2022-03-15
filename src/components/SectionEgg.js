@@ -1,23 +1,23 @@
 import React from 'react'
 import styled from 'styled-components'
+import classes from "../Section.module.css"
+
 
 function SectionEgg(props) {
   return(
     <Main>
-      <Text>
-        <MainText>
-          <h1>{props.title}</h1>
-        </MainText>
-        <SmallText>
-          <p>{props.description}</p>
-        </SmallText>
-        <Button>
+      <div>
+        <section className={classes.TextEgg}>
+          <h1 className={classes.TitleEgg}>{props.title}</h1>
+          <p className={classes.ParagraphEgg}>{props.description}</p>
+        </section>
+        
         <div>{props.buttonText}</div>
-        </Button>
-      </Text>
-      <Image>
-        <img src={`../images/${props.image}`} alt="Photograph of an egg"/>
-      </Image>
+        
+      </div>
+      
+        <img src={`../images/${props.image}`} alt="Photograph of an egg" className={classes.Egg}/>
+      
      
     </Main>
   )
@@ -27,7 +27,9 @@ export default SectionEgg
 
 const Main = styled.div`
   display: flex;
-  justify-content: space-between;
+  
+  width: 100vw;
+
 
   @media (max-width: 768px) {
     flex-direction: column-reverse;
@@ -37,7 +39,7 @@ const Main = styled.div`
   
 `
 
-const Text = styled.div`
+/*const Text = styled.div`
   padding: 150px;
   text-align: left;
 `
@@ -58,7 +60,9 @@ const SmallText = styled.div`
 `
 
 const Image = styled.div`
-  
+  width: 50vw;
+  height: 50vh;
+  max-width: 50%;
 
 `
 
@@ -70,7 +74,7 @@ const Button = styled.div`
   line-height: 7px;
   
 
-`
+`*/
 /*- Very dark desaturated blue: hsl(212, 27%, 19%)
 - Very dark grayish blue: hsl(213, 9%, 39%)
 - Dark grayish blue: hsl(232, 10%, 55%)

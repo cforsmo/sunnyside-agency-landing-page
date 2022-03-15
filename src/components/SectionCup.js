@@ -1,23 +1,22 @@
 import React from 'react'
 import styled from 'styled-components'
+import classes from "../Section.module.css"
+
 
 function SectionCup(props) {
   return(
     <Main>
-      <Text>
-        <MainText>
-          <h1>{props.title}</h1>
-        </MainText>
-        <SmallText>
-          <p>{props.description}</p>
-        </SmallText>
-        <Button>
+      <div>
+        <section className={classes.TextCup}>
+          <h1 className={classes.TitleCup}>{props.title}</h1>
+          <p className={classes.ParagraphCup}>{props.description}</p>
+        </section>
+      
         <div>{props.buttonText}</div>
-        </Button>
-      </Text>
-      <Image>
-        <img src={`../images/${props.image}`} alt="Photograph of a cup"/>
-      </Image>
+       
+      </div>
+
+        <img src={`../images/${props.image}`} alt="Photograph of a cup" className={classes.Cup}/>
      
     </Main>
   )
@@ -28,7 +27,7 @@ export default SectionCup
 const Main = styled.div`
   display: flex;
   flex-direction: row-reverse;
-  justify-content: space-between;
+  width: 100vw;
   
   
   @media (max-width: 768px) {
@@ -40,9 +39,8 @@ const Main = styled.div`
 
 `
 
-const Text = styled.div`
-  padding: 150px;
-  text-align: left;
+/*const Text = styled.div`
+  
 `
 
 const MainText = styled.div` 
@@ -72,4 +70,4 @@ const Button = styled.div`
   border-bottom: 6px solid hsl(7, 99%, 70%);
   display: inline-block;
   line-height: 7px;
-`
+`*/

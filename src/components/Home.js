@@ -12,6 +12,7 @@ function Home() {
         title='We are creatives'
         description=''
         backgroundImg='image-header.jpg'
+        backgroundImgMobile='image-header-mobile.jpg'
       />
       <SectionEgg
         title="Transform your brand"
@@ -19,6 +20,7 @@ function Home() {
         brands grow fast. Engage your clients through compelling visuals that do most 
         of the marketing for you.'
         image='image-transform.jpg'
+        imageMobile='image-transform-mobile.jpg'
         buttonText="Learn more"
       />
             <SectionCup
@@ -26,6 +28,7 @@ function Home() {
         description="Using a collaborative formula of designers, researchers, photographers,
         videographers, and copywriters, we'll build and extend your brand in digital places."
         image='image-stand-out.jpg'
+        imageMobile='image-stand-out-mobile.jpg'
         buttonText="Learn more"
       />
             <SectionFruit
@@ -36,7 +39,9 @@ function Home() {
         descriptionOrange="Increase your credibility by getting the most stunning, high-quality photos
         that improve your business image."
         imageCherry='image-graphic-design.jpg'
+        imageCherryMobile='image-graphic-design-mobile.jpg'
         imageOrange="image-photography.jpg"
+        imageOrangeMobile="image-photography-mobile.jpg"
       />
     </Container>
   )

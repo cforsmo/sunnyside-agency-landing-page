@@ -1,10 +1,19 @@
+.NavLinks {
+  display: flex;
+  justify-content: flex-end;
+  width: 50%;
+  height: auto;
+  
+  
+}
+
 .NavListItems {
   color: white;
   display: flex;
   margin-top: 0;
-  justify-content: flex-end;
   position: absolute;
-  
+
+
 }
 
 .NavListItems li {
@@ -14,6 +23,7 @@
   padding: 20px;
   display: inline-block;
   margin: 1.5vw;
+  
 }
 
 .Logo {
