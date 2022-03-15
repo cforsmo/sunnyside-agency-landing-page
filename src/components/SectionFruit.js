@@ -7,11 +7,11 @@ function SectionFruit(props) {
   return(
     <div className={classes.Fruit}>
       <div className={classes.FigureCherry}>
-      <img src={`../images/${props.imageCherry}`} alt="Photograph of cherries" className={classes.Cherry}/>
-            <figcaption className={classes.FigcaptionCherry}>
-                <h1 className={classes.TitleCherry}>{props.titleCherry}</h1>
-                <p className={classes.ParagraphCherry}>{props.descriptionCherry}</p>
-            </figcaption>
+        <img src={`../images/${props.imageCherry}`} alt="Photograph of cherries" className={classes.Cherry}/>
+              <figcaption className={classes.FigcaptionCherry}>
+                  <h1 className={classes.TitleCherry}>{props.titleCherry}</h1>
+                  <p className={classes.ParagraphCherry}>{props.descriptionCherry}</p>
+              </figcaption>
         </div>
         <div className={classes.FigureOrange}>
         <img src={`../images/${props.imageOrange}`} alt="Photograph of an orange" className={classes.Orange}/>

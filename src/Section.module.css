@@ -70,28 +70,32 @@ margin-top: -11em;
 
 }
 
-.FigcaptionCherry {
-  float: left;
+
+.FigureCherry {
+  position: relative;
   text-align: center;
+}
+.FigcaptionCherry {
+  position: absolute;
   z-index: 1;
-  margin-top: -11em;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+  
   
   }
   .TitleCherry {
     font-family: Fraunces;
     font-size: 2em;
     color: hsl(167, 40%, 24%);
-  
-    
-  
+
   }
   
   .ParagraphCherry {
     font-family: Barlow;
-    font-size: 1.1em;
+    font-size: 1em;
     color: hsl(167, 40%, 24%);
-  
-  
+    line-height: 1.8em;
   
   }
 
