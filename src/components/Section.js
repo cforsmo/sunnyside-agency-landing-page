@@ -25,6 +25,8 @@ const Wrap = styled.div`
   background-position: center;
   background-repeat: no-repeat;
   background-image: url(../images/image-header.jpg);
+  position: relative;
+  z-index: 0;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

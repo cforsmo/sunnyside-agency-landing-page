@@ -12,7 +12,8 @@ function SectionCup(props) {
           <p className={classes.ParagraphCup}>{props.description}</p>
         </section>
       
-        <div>{props.buttonText}</div>
+        <div className={classes.ButtonCup}>{props.buttonText}</div>
+        <div className={classes.FigureCup}></div>
        
       </div>
 

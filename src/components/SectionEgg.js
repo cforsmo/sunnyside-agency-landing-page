@@ -12,7 +12,9 @@ function SectionEgg(props) {
           <p className={classes.ParagraphEgg}>{props.description}</p>
         </section>
         
-        <div>{props.buttonText}</div>
+        <div className={classes.ButtonEgg}> {props.buttonText}</div>
+        <div className={classes.FigureEgg}></div>
+
         
       </div>
       

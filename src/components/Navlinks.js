@@ -11,7 +11,7 @@ function NavLinks () {
           <li>About</li>
           <li>Services</li>
           <li>Projects</li>
-          <li className={classes.ContactButton}>Contact</li>
+          <li className={classes.ContactButton}><button>Contact</button></li>
         </ul>
       </nav>
     </div>

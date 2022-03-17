@@ -2,25 +2,98 @@
 .Egg {
   width: 50vw;
   height: auto;
+  
 }
 
 .TextEgg {
   width: 50vw;
   height: auto;
-
+  
 }
 
+.TitleEgg {
+  font-family: Fraunces;
+  color: hsl(212, 27%, 19%);
+  font-size: 35px;
+  padding: 20% 150px 0 120px;
+  
+}
+
+.ParagraphEgg {
+  font-family: Barlow;
+  color: hsl(210, 4%, 67%);
+  font-size: 15px;
+  line-height: 30px;
+  padding: 0 90px 20px 120px;
+}
+
+.ButtonEgg {
+  font-family: Fraunces;
+  font-size: 15px;
+  text-transform: uppercase;
+  display: inline-block;
+  margin-left: 127px;
+}
+
+
+.FigureEgg {
+  position: center;
+  border-bottom: 8px solid hsl(51, 100%, 49%, .3);
+  line-height: 6px;
+  margin-left: 120px;
+  border-radius: 5px;
+  width: 121px;
+  margin-top: -7px;
+
+}
 
 .Cup {
   width: 50vw;
   height: auto;
   
+  
 }
 
 .TextCup {
   width: 50vw;
-  height: 50vh;
+  height: auto;
   text-align: left;
+}
+
+.TitleCup{
+  font-family: Fraunces;
+  color: hsl(212, 27%, 19%);
+  font-size: 35px;
+  padding: 20% 150px 0 110px;
+}
+
+.ParagraphCup {
+  font-family: Barlow;
+  color: hsl(210, 4%, 67%);
+  font-size: 15px;
+  line-height: 30px;
+  padding: 0 150px 20px 110px;
+}
+
+
+.ButtonCup {
+  font-family: Fraunces;
+  text-transform: uppercase;
+  display: inline-flex;
+  font-size: 15px;
+  margin-left: 117px;
+}
+
+.FigureCup {
+  position: center;
+  border-bottom: 8px solid hsl(7, 99%, 70%, .3);
+  line-height: 6px;
+  margin-left: 110px;
+  border-radius: 5px;
+  width: 121px;
+  margin-top: -7px;
+
+
 }
 
 .Fruit {
@@ -37,6 +110,39 @@
   
 }
 
+.FigureOrange {
+  position: relative;
+  text-align: center;
+}
+
+
+
+.FigcaptionOrange {
+  position: absolute;
+  z-index: 1;
+  top: 77%;
+  left: 50%;
+  transform: translate(-50%, -50%)
+
+}
+.TitleOrange {
+  font-family: Fraunces;
+  font-size: 30px;
+  color: hsl(198, 62%, 26%);
+  
+
+}
+
+.ParagraphOrange {
+  font-family: Barlow;
+  font-size: 15px;
+  color: hsl(198, 62%, 26%);
+  line-height: 30px;
+
+
+}
+
+
 .Cherry {
   width: 50vw;
   height: auto;
@@ -46,35 +152,12 @@
   
 }
 
-
-.FigcaptionOrange {
-float: right;
-text-align: center;
-z-index: 1;
-margin-top: -11em;
-
-}
-.TitleOrange {
-  font-family: Fraunces;
-  font-size: 2em;
-  color: hsl(198, 62%, 26%);
-  
-
-}
-
-.ParagraphOrange {
-  font-family: Barlow;
-  font-size: 1.1em;
-  color: hsl(198, 62%, 26%);
-
-
-}
-
-
 .FigureCherry {
   position: relative;
   text-align: center;
 }
+
+
 .FigcaptionCherry {
   position: absolute;
   z-index: 1;
@@ -83,21 +166,21 @@ margin-top: -11em;
   transform: translate(-50%, -50%)
   
   
-  }
-  .TitleCherry {
-    font-family: Fraunces;
-    font-size: 2em;
-    color: hsl(167, 40%, 24%);
+}
+.TitleCherry {
+  font-family: Fraunces;
+  font-size: 30px;
+  color: hsl(167, 40%, 24%);
 
-  }
+}
   
-  .ParagraphCherry {
-    font-family: Barlow;
-    font-size: 1em;
-    color: hsl(167, 40%, 24%);
-    line-height: 1.8em;
+.ParagraphCherry {
+  font-family: Barlow;
+  font-size: 15px;
+  color: hsl(167, 40%, 24%);
+  line-height: 30px;
   
-  }
+}
 
   @media (max-width: 768px) {
 
