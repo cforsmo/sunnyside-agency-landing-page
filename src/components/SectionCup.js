@@ -31,7 +31,7 @@ const Main = styled.div`
   width: 100vw;
   
   
-  @media (max-width: 768px) {
+  @media (max-width: 860px) {
     flex-direction: column-reverse;
     align-items: center;
     

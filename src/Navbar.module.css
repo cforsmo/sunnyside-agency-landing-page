@@ -62,8 +62,6 @@ body {
 }
 .Header .MobileNavigation {
   display: none;
-  
-  
 }
 
 @media (max-width: 769px) {
@@ -72,52 +70,65 @@ body {
   .Header .MobileNavigation{
     display: flex;
     justify-content: center;
+    position: absolute;
+    z-index: 1;
+    width: 100vw;
+    text-align: center;
     
   }
 
   .Header .Navigation{
     display: none;
+    
   }
 
   .Header .MobileNavigation .Hamburger {
     position: absolute;
-    right: 3%;
+    right: 30px;
     cursor: pointer;
     top: 22px;
   }
 
   .NavListItems {
-    display: flex;
     flex-direction: column;
     position: absolute;
     justify-content: center;
     background-color: white;
     color: hsl(232, 10%, 55%);
-    top: 100px;
-    float: left;
-    width: 300px;
-    height: 300px;
-    right: 3%;
-    
+    width: 230px;
+    height: 290px;
+    transform: translate(-50%, 40%);
 
   }
 
   .NavListItems li {
-    padding-bottom: 10px;
-    font-size: 20px;
-    text-align: center;
-    
+    font-size: 18px;
+    display: inline-block;
+    padding: 45px;
   }
 
 
   
-  .NavListItems .ContactButton {
+  .ContactButton button{
     background-color: hsl(51, 100%, 49%);
     font-family: Fraunces;
-    height: 25px;
-    width: 100px;
+    width: 130px;
     font-size: 15px;
-    margin-left: 25%;
+    margin-top: 1px;
+    margin-bottom: -20px;
+   
+  }
 
+  .Triangle {
+    width: 30px;
+    height: 30px;
+    background-image:
+      linear-gradient(to bottom right, transparent 50%, white 0);
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: left, right;
+    position: absolute;
+    left: 280px;
+    top: -30px;
   }
 }

@@ -26,13 +26,3 @@ function SectionFruit(props) {
 
 export default SectionFruit
 
-
-  /*display: flex;
-  flex-direction: row;
-  width: 100vw;
-  @media (max-width: 768px) {
-    flex-direction: column-reverse;
-    align-items: center;
-  }
-  
-`*/

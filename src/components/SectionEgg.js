@@ -6,7 +6,7 @@ import classes from "../Section.module.css"
 function SectionEgg(props) {
   return(
     <Main>
-      <div>
+      <div className={classes.EggSection}>
         <section className={classes.TextEgg}>
           <h1 className={classes.TitleEgg}>{props.title}</h1>
           <p className={classes.ParagraphEgg}>{props.description}</p>
@@ -29,11 +29,10 @@ export default SectionEgg
 
 const Main = styled.div`
   display: flex;
-  
   width: 100vw;
 
 
-  @media (max-width: 768px) {
+  @media (max-width: 860px) {
     flex-direction: column-reverse;
     align-items: center;
     
