@@ -1,12 +1,11 @@
 import React from 'react'
 import styled from 'styled-components'
-/*import desktopImage from "../images/image-header.jpg"
-import mobileImage from "../images/image-header-mobile.jpg"*/
 
-function Section ({title, description, backgroundImg, backgroundImgMobile, image, iconDown}) {
+function Section({title, description, backgroundImg, backgroundImgMobile, image, iconDown}) {
 
   return (
     <Wrap bgImage={`../images/${backgroundImg}`}>
+      <Logo>sunnyside</Logo>
       <ItemText>
         <h1>{title}</h1>
       </ItemText>
@@ -35,19 +34,17 @@ const Wrap = styled.div`
   align-items: center;
   background-image: ${props => `url("/images/${props.bgImage}")`}
   
-  
 `
 
 
 const ItemText = styled.div`
-  padding-top: 15vh;
+  padding-top: 18vh;
   text-align: center;
   color: white;
-  font-size: 2.1em;
-  letter-spacing: .2em;
+  font-size: 30px;
+  letter-spacing: 9px;
   font-family: Fraunces;
   text-transform: uppercase;
-  
 `
 
 const Text = styled.div`
@@ -59,8 +56,18 @@ const Text = styled.div`
 
 const DownArrow = styled.img`
   height: 100px;
-  margin-top: -250px;
+  margin-top: -265px;
 
+`
+
+const Logo = styled.div`
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  font-family: Barlow;
+  font-size: 30px;
+  font-weight: bold;
+  color: white;
 `
 
 

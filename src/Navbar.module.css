@@ -2,47 +2,29 @@ body {
   overflow-x:hidden;
 }
 
-.NavLinks {
+.NavListItems {
   position: absolute;
   z-index: 1;
   width: 100vw;
-  
-}
-
-.NavListItems {
   color: white;
   display: flex;
-  margin-top: 0;
-  display: flex;
-  flex-direction: row;
   justify-content: flex-end;
   font-family: Barlow;
-  padding-right: 40px;
-  text-align: center;
+  top: 2%;
+  right: 1%;
+  
   
 
 }
 
 .NavListItems li {
-  
   font-size: 18px;
   list-style-type: none; 
   display: flex;
   padding: 0 15px 0 25px;
-  margin-top: -60px;
-  
-  
   
 }
 
-.Logo {
-  font-family: Barlow;
-  font-size: 30px;
-  font-weight: bold;
-  color: white;
-  padding-left: 20px;
-  
-}
 .ContactButton button{
   font-family: Fraunces;
   border-radius: 50px;
@@ -50,24 +32,22 @@ body {
   height: 50px;
   width: 130px;
   border: none;
-  display: inline-block;
   text-transform: uppercase;
-  display: inline-block;
+  
   font-size: 15px;
   color: hsl(212, 27%, 19%);
   background-color: white;
   
-  
-  
 }
-.Header .MobileNavigation {
+
+.MobileNavigation {
   display: none;
-}
+} 
 
 @media (max-width: 769px) {
 
 
-  .Header .MobileNavigation{
+  .MobileNavigation{
     display: flex;
     justify-content: center;
     position: absolute;
@@ -77,12 +57,12 @@ body {
     
   }
 
-  .Header .Navigation{
+  .Navigation{
     display: none;
     
   }
 
-  .Header .MobileNavigation .Hamburger {
+  .MobileNavigation .Hamburger {
     position: absolute;
     right: 30px;
     cursor: pointer;
@@ -98,17 +78,17 @@ body {
     width: 230px;
     height: 290px;
     transform: translate(-50%, 40%);
-
+    padding-right: 40px;
+  text-align: center;
   }
 
   .NavListItems li {
     font-size: 18px;
     display: inline-block;
     padding: 45px;
+    margin-top: -60px;
   }
 
-
-  
   .ContactButton button{
     background-color: hsl(51, 100%, 49%);
     font-family: Fraunces;
@@ -116,14 +96,13 @@ body {
     font-size: 15px;
     margin-top: 1px;
     margin-bottom: -20px;
-   
   }
 
   .Triangle {
     width: 30px;
     height: 30px;
     background-image:
-      linear-gradient(to bottom right, transparent 50%, white 0);
+    linear-gradient(to bottom right, transparent 50%, white 0);
     background-size: 100% 100%;
     background-repeat: no-repeat;
     background-position: left, right;
