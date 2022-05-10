@@ -97,8 +97,6 @@
   border-radius: 5px;
   width: 121px;
   margin-top: -7px;
-
-
 }
 
 .Fruit {
@@ -112,7 +110,6 @@
   height: auto;
   z-index: -1;
   position: relative;
-  
 }
 
 .FigureOrange {
@@ -120,24 +117,19 @@
   text-align: center;
 }
 
-
-
 .FigcaptionOrange {
   position: absolute;
   z-index: 1;
   top: 77%;
   left: 50%;
   transform: translate(-50%, -50%)
-
 }
+
 .TitleOrange {
   font-family: Fraunces;
   font-size: 30px;
   font-weight: 900;
-
   color: hsl(198, 62%, 26%);
-  
-
 }
 
 .ParagraphOrange {
@@ -145,10 +137,7 @@
   font-size: 15px;
   color: hsl(198, 62%, 26%);
   line-height: 30px;
-
-
 }
-
 
 .Cherry {
   width: 50vw;
@@ -162,16 +151,14 @@
   text-align: center;
 }
 
-
 .FigcaptionCherry {
   position: absolute;
   z-index: 1;
   top: 80%;
   left: 50%;
   transform: translate(-50%, -50%)
-  
-  
 }
+
 .TitleCherry {
   font-family: Fraunces;
   font-size: 30px;
