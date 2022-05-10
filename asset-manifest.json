@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/cforsmo/sunnyside-agency-landing-page.git/static/css/main.ac243945.css",
+    "main.js": "/cforsmo/sunnyside-agency-landing-page.git/static/js/main.dddf8d20.js",
+    "static/js/787.cbcae755.chunk.js": "/cforsmo/sunnyside-agency-landing-page.git/static/js/787.cbcae755.chunk.js",
+    "index.html": "/cforsmo/sunnyside-agency-landing-page.git/index.html",
+    "main.ac243945.css.map": "/cforsmo/sunnyside-agency-landing-page.git/static/css/main.ac243945.css.map",
+    "main.dddf8d20.js.map": "/cforsmo/sunnyside-agency-landing-page.git/static/js/main.dddf8d20.js.map",
+    "787.cbcae755.chunk.js.map": "/cforsmo/sunnyside-agency-landing-page.git/static/js/787.cbcae755.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.ac243945.css",
+    "static/js/main.dddf8d20.js"
+  ]
+}
